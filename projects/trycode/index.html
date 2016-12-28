@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tryit Editor</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div id="shield"></div>
+    <a href="javascript:void(0)" id="dragbar"></a>
+    <div class="container" id="container">
+        <div class="textareacontainer" id="textareacontainer">
+            <div class="textarea" id="textarea">
+                <div style="overflow:auto;">
+                    <button title="Vertically" onclick="restack(false)" id="stackV">Vertical</button>
+                    <button title="Horizontally"  onclick="restack(true)" id="stackH">Horizontal</button>
+                    <button class="run" type="button" onclick="submitTryit()">Run &raquo;</button>
+                    <label class="switch">
+  						<input type="checkbox" id="myswitch" checked>
+  						<div class="slider round"></div>
+					</label>
+                </div>
+                <div class="textareawrapper">
+                    <textarea autocomplete="off" class="code_input" id="textareaCode" wrap="logical" spellcheck="false"><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    p {
+      color:black;
+      background-color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <p>I have a dream</p>
+</body>
+</html>
+</textarea>
+                    <form autocomplete="off" style="margin:0px;display:none;">
+                        <input type="hidden" name="code" id="code" />
+                        <input type="hidden" id="bt" name="bt" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="iframecontainer" id="iframecontainer">
+            <div class="iframe" id="iframe">
+                <div style="overflow:auto;">
+                    <div class="headerText">Result:</div>
+    				<div id="framesize"></div>
+                </div>
+                <div id="iframewrapper" class="iframewrapper">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>

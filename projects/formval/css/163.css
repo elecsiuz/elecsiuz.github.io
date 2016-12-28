@@ -1,0 +1,164 @@
+/*all style*/
+body{
+    background: #efefef;
+    padding-bottom: 50px;
+}
+/*font*/
+body,button,a,input{
+	font-family:  FZLanTingHei-EL-GBK,"Open Sans","Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,"WenQuanYi Micro Hei",Dengxian,Arial,SimSun,sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+button{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content: '';
+    clear: both;
+    height: 0;
+    display: block;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+/*title*/
+.logo{
+    width: 300px;
+    background: url(../img/sprite.png) no-repeat;
+    height: 60px;
+    float: left;
+    margin-left: -50px;
+}
+.reg-title{
+    margin-top: 50px;
+}
+.pull-right {
+    float: right;
+}
+.login{
+    margin:20px 0px 0px 0px;
+    cursor: default;
+}
+.login span {
+    color: #C1252E;
+    font-size: 20px;
+    cursor: pointer;
+}
+.reg-body:hover .reg-alt {
+    box-shadow: 10px 10px 5px #ccc;
+}
+.reg-alt {
+    background: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 50px;
+    transition: all .6s ease;
+}
+.reg-h {
+    font-weight: 200;
+    color: #C1252E;
+    cursor: default;
+}
+/*pull left*/
+.ctrl-label {
+    width: 300px;
+    float: left;
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
+}
+/*input*/
+.input-info {
+    width: 320px;
+    height: 44px;
+    text-indent: .6em;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    outline: none;
+    float: left;
+}
+.input-info.active{
+border-color: #4aafe9;
+}
+.input-box {
+    height: 72px;
+}
+.reg-btn {
+    background: #ca5252;
+    border: none;
+    opacity: .6;
+    color: #fff;
+    font-size: 18px;
+    text-indent: 0;
+}
+.reg-info {
+    margin-top: 50px;
+}
+.i-note {
+    height: 22px;
+    color: #999;
+    font-size: 12px;
+}
+.i18 {
+    color: #4aafe9;cursor: pointer;
+}
+.t-btn {
+    height: 58px;
+}
+span.bom-word {
+    display: block;
+    width: 330px;
+    float: left;
+    color: #999;
+    font-size: 12px;
+}
+/*bottom word*/
+.bom-word a {
+    color: #999;
+}
+.bom-word a:hover {
+    text-decoration: none;
+    color: #666;
+}
+#message {
+    width: 192px;
+    outline: none;
+}
+/*get message*/
+.get-btn {
+    width: 120px;
+    height: 44px;
+    margin-left: 8px;
+    background: #a1d1f6;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    opacity: .8;
+    float: left;
+}
+/*wrong prompt*/
+.prompt {
+    color: red;
+    padding: 5px 10px;
+    font-size: 16px;
+    float: left;
+    opacity: 0;
+    transition: all 1s cubic-bezier(1, -0.24, 0.11, 1.51);
+    animation: showW 1s cubic-bezier(1, -0.03, 0.24, 1.34) both;
+}
+/*ainimation*/
+@-webkit-keyframes showW{
+    0%{
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
